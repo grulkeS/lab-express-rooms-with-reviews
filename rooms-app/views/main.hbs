@@ -1,0 +1,12 @@
+<h1>Rooms</h1>
+<ul>
+{{#each room}}
+<li>{{this.name}}</li>
+<form id="roomEdit" action="/" method="POST"></form>
+  <button type="submit" id="{{this._id}}">Edit Room</button>
+</form>
+{{/each}}
+</ul>
+<form id="roomCreate" action="/createRoom" method="POST"></form>
+ <a href="/createRoom"> <button type="submit" id= "createARoom">Create a Room</button></a>
+</form>

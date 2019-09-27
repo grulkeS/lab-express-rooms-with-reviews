@@ -1,0 +1,16 @@
+<form id="loginForm" action="/createRoom" method="POST">
+  <label for="roomName">RoomName</label><br>
+  <input type="text" name="roomName" placeholder="Your Roomname">
+  <br>
+  <label for="roomDescription">Room Description</label><br>
+  <input type="roomDescription" name="roomDescription" placeholder="Room Description">
+<br>
+  <label for="imgURL">imgURL</label><br>
+  <input type="imgURL" name="imgURL" placeholder="imgURL">
+<br>
+  <button type="submit">Create</button>
+</form>
+
+{{#if errorMessage}}
+<div class="error-message">{{ errorMessage }}</div>
+{{/if}}
